@@ -13,18 +13,26 @@ img {
 header {
     background-color: #404146;
     color: white;
+    display: flex;
     height: 90px;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
 }
 
 .header-logo {
     font-size: 36px;
     letter-spacing: 10px;
-    float: left;
     padding: 20px;
 }
 
+.header-list ul {
+    display: flex;
+}
+
 .header-list li {
-    float: left;
     padding: 30px;
     font-size: 22px;
 }
@@ -45,22 +53,24 @@ header {
 .cover h2 {
     font-size: 60px;
     font-weight: 100;
-    /* ??? */
 }
 
 .about {
     background-color: #c8c6c6;
-    height: auto;
     padding: 40px;
 }
 
 .projects {
-    height: 400px;
     padding: 40px;
 }
 
+.projects-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
 .projects-item {
-    float: left;
     margin: 20px 70px;
 }
 
@@ -72,23 +82,27 @@ header {
 .contact-form {
     background-color: #c8c6c6;
     padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 input,
 textarea {
-    width: 800px;
+    width: 400px;
     margin-top: 10px;
     margin-bottom: 20px;
     padding: 20px;
     border: 1px solid #dee7ec;
     border-radius: 8px;
     font-family: monospace;
+    display: block;
 }
 
 .contact-submit {
     background-color: #F2D00F;
     margin-bottom: 10px;
-    width: 700px;
+    width: 200px;
 }
 
 footer {
